@@ -12,6 +12,9 @@ module.exports = {
 			colors: {
 				'regal-blue': '#243c5a',
 			},
+			backgroundImage: {
+				'hash-pattern': "url('src/images/hasground.jpg')",
+			},
 		},
 
 	},

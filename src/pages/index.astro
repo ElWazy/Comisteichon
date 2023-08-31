@@ -1,5 +1,6 @@
 ---
 import Navbar from "../components/Navbar.astro";
+import Header from "../components/Header.astro";
 import hashground from "../images/hasground.jpg";
 ---
 
@@ -8,35 +9,22 @@ import hashground from "../images/hasground.jpg";
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Shadows+Into+Light&display=swap"
+			rel="stylesheet"
+		/>
 		<title>Document</title>
 	</head>
 	<body>
+		
 		<!--No logre hacer que la imagen ocupe todo el width pero no todo el height -->
-			<div class="h-96">
-				<img class="object-fit h-9/12 w-screen" src={hashground} width="20%"/>
-			</div>
-			
-			<header class="absolute inset-x-0 top-0 z-50">
-				<Navbar />
-				<div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-					<div class="text-center">
-						<h1
-							class="font-extrabold text-9xl font-dancing-script"
-						>
-							Comisteichon
-						</h1>
-						<p class="mt-6 text-lg leading-8 text-gray-600">
-							Comiste comia ctm.
-						</p>
-						<div class="flex place-content-center">
-							<a href="#" class="mt-10 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500">Get Started</a>
-						</div>
-					</div>
-				</div>
-			</header>
+		
+		<div class="bg-[url(src/images/hasground.jpg)] bg-cover h-screen w-screen">
+			<Navbar />
+			<Header />
 		</div>
+
 	</body>
 </html>
