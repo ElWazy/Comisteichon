@@ -9,22 +9,31 @@ import hashground from "../images/hasground.jpg";
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<meta property="og:title" content="Comisteichon" />
+		<meta property="og:site_name" content="Comisteichon" />
+		<meta property="og:url" content="https://comisteichon.cl" />
+		<meta property="og:description" content="Pa comer" />
+		<meta property="og:type" content="website" />
+		<meta
+			property="og:image"
+			content="https://comisteichon.s3.amazonaws.com/_astro/hasground.jpg"
+		/>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Shadows+Into+Light&display=swap"
 			rel="stylesheet"
 		/>
-		<title>Document</title>
+		<title>Comiste</title>
 	</head>
 	<body>
-		
 		<!--No logre hacer que la imagen ocupe todo el width pero no todo el height -->
-		
-		<div class="bg-[url(https://comisteichon.s3.amazonaws.com/_astro/hasground.jpg)] bg-cover h-screen w-screen">
+
+		<div
+			class="bg-[url(https://comisteichon.s3.amazonaws.com/_astro/hasground.jpg)] bg-cover h-screen w-screen"
+		>
 			<Navbar />
 			<Header />
 		</div>
-
 	</body>
 </html>
