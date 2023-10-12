@@ -1,6 +1,6 @@
-#The Comisteichon Proyect
+# The Comisteichon Proyect
 
-##Proyecto sin fines de lucro
+## Proyecto sin fines de lucro
 
 **Para alimentar a todos los wnes que andan comiendo comia**
 
