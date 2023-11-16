@@ -1,0 +1,36 @@
+---
+import inspector from '../images/inspector.jpg'
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<meta property="og:title" content="Comisteichon" />
+		<meta property="og:site_name" content="Comisteichon" />
+		<meta property="og:url" content="https://comisteichon.cl" />
+		<meta property="og:description" content="Pa comer" />
+		<meta property="og:type" content="website" />
+		<meta
+			property="og:image"
+			content="https://comisteichon.cl/hasground.jpg"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Shadows+Into+Light&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Comiste</title>
+	</head>
+	<body>
+		<div class="bg-[url(https://comisteichon.cl/hasground.jpg)] bg-cover h-screen w-screen">
+			<div >
+                <h1 class="font-extrabold sm:text-6xl text-6xl text-center font-dancing-script">Con todo respeto</h1>
+                <img src={inspector} alt="Inspector" />
+            </div>
+		</div>
+
+	</body>
+</html>
