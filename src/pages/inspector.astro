@@ -1,6 +1,6 @@
 ---
-import inspector from '../images/inspector.jpg'
-import 'animate.css';
+import inspector from "../images/inspector.jpg";
+import "animate.css";
 ---
 
 <html lang="en">
@@ -27,11 +27,24 @@ import 'animate.css';
 	</head>
 	<body>
 		<div class="bg-[url(https://comisteichon.cl/hasground.jpg)] bg-cover h-screen w-screen">
-			<div >
-                <h1 class="font-extrabold sm:text-6xl text-6xl text-center font-dancing-script">Con todo respeto</h1>
-                <img src={inspector} alt="Inspector" class="animate__animated animate__bounceIn mx-auto block mt-4"/>
-            </div>
+			<div>
+				<h1
+					class="font-extrabold sm:text-6xl text-6xl text-center font-dancing-script"
+				>
+					Con todo respeto
+				</h1>
+				<div class="canvas-container"></div>
+			</div>
 		</div>
-
 	</body>
 </html>
+
+<style scoped>
+	.canvas-container {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+	}
+</style>
+
+<script src="../scripts/entry.ts"></script>
