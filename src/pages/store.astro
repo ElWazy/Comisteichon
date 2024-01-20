@@ -1,0 +1,48 @@
+---
+import merch1 from '../images/merch1.jpg';
+import merch2 from '../images/merch2.jpg';
+import merch3 from '../images/merch3.jpg';
+import merch4 from '../images/merch4.jpg';
+import 'animate.css';
+---
+
+<astro>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width" />
+      <meta name="generator" content={Astro.generator} />
+      <!-- Add your meta tags here -->
+      <title>Comiste</title>
+    </head>
+    <body>
+      <div class="bg-[url(https://comisteichon.cl/hasground.jpg)] bg-cover h-screen w-screen">
+        <div class="flex flex-wrap justify-center items-center h-full">
+          <!-- Card 1 -->
+          <div class="card mx-2 my-4 animate__animated animate__flipInY">
+            <img src={merch1} alt="merch" class="w-full" />
+            <h2 class="text-white text-center">Cojín $19.990 / SIN STOCK</h2>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card mx-2 my-4 animate__animated animate__flipInY">
+            <img src={merch2} alt="merch" class="w-full" />
+            <h2 class="text-white text-center">Cojín $19.990 / SIN STOCK</h2>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="card mx-2 my-4 animate__animated animate__flipInY">
+            <img src={merch3} alt="merch" class="w-full" />
+            <h2 class="text-white text-center">Cojín $19.990 / SIN STOCK</h2>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="card mx-2 my-4 animate__animated animate__flipInY">
+            <img src={merch4} alt="merch" class="w-full" />
+            <h2 class="text-white text-center">Cojín $19.990 / SIN STOCK</h2>
+          </div>
+        </div>
+      </div>
+    </body>
+  </html>
+</astro>
