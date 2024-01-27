@@ -24,15 +24,20 @@ import Header from "../components/Header.astro";
 			rel="stylesheet"
 		/>
 		<title>Comiste</title>
-		
-
 	</head>
 	<body>
-		<!--No logre hacer que la imagen ocupe todo el width pero no todo el height -->
-		<!-- sm:bg-[url(https://i.etsystatic.com/34703086/r/il/4ed3d3/4404631365/il_570xN.4404631365_avqx.jpg)]  -->
-		<div class={`bg-[url(https://comisteichon.cl/hasground.jpg)] bg-cover h-screen w-screen`}>
+		<div class="relative">
+			<!-- Fondo -->
+			<div
+				class="absolute blur-sm inset-0 bg-[url(https://wallpaperbat.com/img/898141-hasbulla-wallpaper.jpg)] bg-no-repeat bg-cover bg-center md:bg-left"
+			>
+			</div>
+			<!-- Contenido -->
 			<Navbar />
-			<Header />
+			<div class="relative z-10 flex items-center">
+				<Header />
+				<!-- Resto del contenido -->
+			</div>
 		</div>
 	</body>
 </html>

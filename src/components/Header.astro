@@ -1,27 +1,44 @@
 ---
 import Navbar from "../components/Navbar.astro";
-import 'animate.css';
+import "animate.css";
 ---
 
-<header class="justify-center items-center">
-    <div class="sm:ml-48 mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+<header class="justify-center mt-14 w-full p-2 flex h-screen">
+    <div class="">
         <div class="text-center">
-            <h1 class="font-extrabold sm:text-9xl text-6xl font-dancing-script animate__animated animate__flash">
+            <h1
+                class="font-extrabold sm:text-9xl text-6xl font-dancing-script animate__animated animate__flash text-white"
+            >
                 Comisteichon
             </h1>
-            <p class="mt-6 text-lg leading-8 text-gray-600">
-                Comiste comia tonto pao.
-            </p>
 
-            <div class="flex flex-col ">
-                 <a href="/comiste" class="mt-10 block w-full rounded-md bg-indigo-600 px-3 py-2 mx-8 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 animate__animated animate__fadeInRightBig">Mas Info.</a>
-                <a href="/inspector" class="mt-10 block w-full rounded-md bg-indigo-600 px-3 py-2 mx-8 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 animate__animated animate__fadeInRightBig">Contacto desarrolladores.</a>
-                  <a href="/merch" class="mt-10 block w-full rounded-md bg-indigo-600 px-3 py-2 mx-8 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 animate__animated animate__fadeInRightBig">Comprar Merch Oficial Comisteichon</a>
-                <a href="/reflexion" class="mt-10 block w-full rounded-md bg-indigo-600 px-3 py-2 mx-8 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 animate__animated animate__fadeInRightBig">Reflexión semanal</a>
-          
+            <p class="text-lg leading-8 text-gray-600 bg-white mt-2">
+                El arte de comer comia
+            </p>
+            <div class="flex flex-col">
+                <a
+                    href="/reflexion"
+                    class="mt-8 block w-full rounded-full bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 animate__animated animate__fadeInRightBig"
+                    >Reflexión semanal</a
+                >
+                <a
+                    href="/merch"
+                    class="mt-7 block w-full rounded-full bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 animate__animated animate__fadeInRightBig"
+                    >Comprar Merch Oficial Comisteichon</a
+                >
+                <a
+                    href="/inspector"
+                    class="mt-7 block w-full rounded-full bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 animate__animated animate__fadeInRightBig"
+                    >Contacto desarrolladores.</a
+                >
+                <a
+                    href="/comiste"
+                    class="mt-7 block w-full rounded-full bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 animate__animated animate__fadeInRightBig"
+                    >Mas Info.</a
+                >
             </div>
 
-            <div class="text-sm font-light text-gray-600 mt-4">
+            <div class="text-sm font-light text-white mt-4">
                 Made by Yuntas Team
             </div>
         </div>
