@@ -6,9 +6,9 @@ import "animate.css";
 import type { ImageMetadata } from "astro";
 
 const images = await Astro.glob<{ default: ImageMetadata }>(
-    "/src/images/hasbullas/*.{jpeg,jpg,png,gif}"
+    "/src/assets/*.{jpeg,jpg,png,gif}"
 ).then((files) => {
-return files.map(file => file.default)    
+    return files.map((file) => file.default);
 });
 ---
 
@@ -25,8 +25,10 @@ return files.map(file => file.default)
         </h1>
     </div>
     <div class="mx-6 columns-1 md:columns-4 gap-6 space-y-6">
-        {images.map(image => (
-            <Image class="w-full rounded-xl shadow"  src={image} alt="asd"/>
-        ))}
+        {
+            images.map((image) => (
+                <Image class="w-full rounded-xl shadow" src={image} alt="asd" />
+            ))
+        }
     </div>
 </Main>
