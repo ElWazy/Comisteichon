@@ -1,12 +1,12 @@
 ---
-import { Image } from "astro:assets";
-import Main from "../layouts/Main.astro";
-import Crown from "../components/logos/Crown.astro";
 import "animate.css";
 import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
+import Crown from "../components/logos/Crown.astro";
+import Main from "../layouts/Main.astro";
 
 const images = await Astro.glob<{ default: ImageMetadata }>(
-    "/src/assets/*.{jpeg,jpg,png,gif}"
+    "/src/assets/*.{jpeg,jpg,png,gif}",
 ).then((files) => {
     return files.map((file) => file.default);
 });
@@ -27,7 +27,7 @@ const images = await Astro.glob<{ default: ImageMetadata }>(
     <div class="mx-6 columns-1 md:columns-4 gap-6 space-y-6 my-8">
         {
             images.map((image) => (
-                <Image class="w-full rounded-xl shadow" src={image} alt="asd" />
+                <Image class="w-full rounded-xl shadow hover:animate-pulse" src={image} alt="asd" />
             ))
         }
     </div>

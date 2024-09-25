@@ -1,7 +1,8 @@
 ---
+import "animate.css";
+import { Image } from "astro:assets";
 import chupao from "../images/chupao.jpg";
 import easterEgg from "../images/easterEgg.png";
-import "animate.css";
 ---
 
 <html lang="en">
@@ -30,19 +31,21 @@ import "animate.css";
 		<div
 			class="bg-gradient-to-r from-teal-400 to-yellow-200 bg-cover h-screen w-screen"
 		>
-			<div class="flex flex-col p-10 h-screen items-center justify-center">
+			<div
+				class="flex flex-col p-10 h-screen items-center justify-center"
+			>
 				<h1
 					class="font-extrabold sm:text-6xl text-4xl text-center text-white"
 				>
 					REFLEXIÓN SEMANAL
 				</h1>
-				<img
+				<Image
 					src={chupao}
 					alt="chupao"
 					width="600"
 					class="mx-auto block mt-4 animate__animated animate__rollIn rounded-2xl shadow-xl"
 				/>
-				<img
+				<Image
 					id="easterEggImage"
 					src={easterEgg}
 					alt="easterEgg"
@@ -53,19 +56,29 @@ import "animate.css";
 			</div>
 		</div>
 		<script>
-			document.addEventListener('DOMContentLoaded', function() {
+			document.addEventListener("DOMContentLoaded", function () {
 				const showEasterEgg = () => {
-					const easterEggImage = document.getElementById('easterEggImage');
+					const easterEggImage =
+						document.getElementById("easterEggImage");
 					if (easterEggImage) {
-						easterEggImage.style.display = 'block';
-						easterEggImage.classList.add('animate__animated', 'animate__fadeInUp');
+						easterEggImage.style.display = "block";
+						easterEggImage.classList.add(
+							"animate__animated",
+							"animate__fadeInUp",
+						);
 						setTimeout(() => {
-							easterEggImage.classList.remove('animate__fadeInUp');
-							easterEggImage.classList.add('animate__fadeOutDown');
+							easterEggImage.classList.remove(
+								"animate__fadeInUp",
+							);
+							easterEggImage.classList.add(
+								"animate__fadeOutDown",
+							);
 						}, 1000); // Mostrar la imagen por 1 segundo
 						setTimeout(() => {
-							easterEggImage.style.display = 'none';
-							easterEggImage.classList.remove('animate__fadeOutDown');
+							easterEggImage.style.display = "none";
+							easterEggImage.classList.remove(
+								"animate__fadeOutDown",
+							);
 						}, 2000); // Ocultar la imagen después de 2 segundos
 					}
 				};
