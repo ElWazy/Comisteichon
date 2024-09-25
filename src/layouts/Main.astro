@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <meta property="og:title" content="Comisteichon" />
+        <meta property="og:site_name" content="Comisteichon" />
+        <meta property="og:url" content="https://comisteichon.cl" />
+        <meta property="og:description" content="Pa comer" />
+        <meta property="og:type" content="website" />
+        <meta
+            property="og:image"
+            content="https://comisteichon.cl/hasground.jpg"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Shadows+Into+Light&display=swap"
+            rel="stylesheet"
+        />
+        <title>Almorzaste</title>
+    </head>
+    <body>
+        <main>
+            <slot />
+        </main>
+    </body>
+</html>
+
+<style>
+    body {
+        background-image: url(hasground.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-color: #66999;
+    }
+</style>

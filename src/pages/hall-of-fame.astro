@@ -1,0 +1,32 @@
+---
+import { Image } from "astro:assets";
+import Main from "../layouts/Main.astro";
+import Crown from "../components/logos/Crown.astro";
+import "animate.css";
+import type { ImageMetadata } from "astro";
+
+const images = await Astro.glob<{ default: ImageMetadata }>(
+    "/src/images/hasbullas/*.{jpeg,jpg,png,gif}"
+).then((files) => {
+return files.map(file => file.default)    
+});
+---
+
+<Main>
+    <div
+        class="flex justify-center py-16 animate__animated animate__pulse animate__slower animate__infinite infinite"
+    >
+        <h1
+            class="flex gap-2 justify-center items-center text-3xl md:text-6xl py-2 px-4 rounded-lg bg-yellow-400 text-yellow-50"
+        >
+            <Crown />
+            Salón de la comia
+            <Crown />
+        </h1>
+    </div>
+    <div class="mx-6 columns-1 md:columns-4 gap-6 space-y-6">
+        {images.map(image => (
+            <Image class="w-full rounded-xl shadow"  src={image} alt="asd"/>
+        ))}
+    </div>
+</Main>
